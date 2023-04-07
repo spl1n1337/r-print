@@ -30,6 +30,9 @@ body {
     font-size: 1.5rem;
     background: #fff;
 }
+b {
+    font-size: 1rem;
+}
 p {
     margin-bottom: 0;
 }
@@ -58,8 +61,8 @@ img {
 }
 .container {
     margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 1rem;
+    max-width: 990px;
+    padding: 0 2rem;
 }
 .f-center {
     display: flex;
@@ -83,25 +86,29 @@ img {
     line-height: 1.375;
     color: #231f20;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
     position: sticky;
-    align-items: center;
     z-index: 100;
-    height: 96px;
+    height: 110px;
     top: 0;
     background: #fff;
     border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    &__callwrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__logo {
         background-color: transparent;
         transition: color .3s ease;
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         position: relative;
         text-decoration: none;
         font-weight: 600;
@@ -147,6 +154,7 @@ img {
         font-weight: 500;
         font-size: 1.715rem;
         text-decoration: underline;
+        margin-bottom: 1rem;
     }
     &__callback {
         margin-left: 34px;
@@ -234,7 +242,7 @@ img {
                 border-bottom: 3px solid var(--gold);
                 cursor: pointer;
                 &::hover .nav-list__in{
-                    height: 165px;
+                    height: 187px;
                 }
             }
         }
@@ -244,7 +252,7 @@ img {
 .nav-trigger {
     position: relative;
     &:hover .nav-list__in {
-        height: 165px;
+        height: 187px;
     }
 }
 
@@ -356,7 +364,6 @@ img {
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
-        padding: 0 2rem;
         &__title {
             color: #ffffff;
             font-size: 4.15rem;
@@ -385,7 +392,7 @@ span.green-text {
     position: relative;
     text-align: center;
     transition: color .3s ease,background .3s ease,border .3s ease;
-    min-width: 262px;
+    min-width: 200px;
     color: #fff;
     background: #6bac62;
     border: 1px solid #6bac62;
@@ -460,36 +467,38 @@ span.green-text {
     max-width: 25%;
 }
 .welcome__benenefits-one {
+    text-align: center;
     color: #231f20;
-    display: block;
     position: relative;
     background: #fff;
     border: 1px solid #efefef;
     border-radius: 3px;
-    font-size: 1.14rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     line-height: 1.3125;
-    padding: 17px 6px;
-    padding-left: 54px;
-    padding-bottom: 16px;
-    margin-bottom: 12px;
+    padding: 2rem 3rem;
     width: auto !important;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &::before, &::after {
         content: "";
         position: absolute;
         background: #6bac62;
+        transform: translateY(-50%);
+        top: 50%;
     }
     &::before {
         height: 14px;
         width: 2px;
         left: 30px;
-        top: 20px;
     }
     &::after {
         width: 14px;
         height: 2px;
         left: 24px;
-        top: 26px;
     }
 }
 
@@ -615,6 +624,10 @@ span.green-text {
     td {
         padding: 10px;
         border: 1px solid #f5f5f5;
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
     }
     img {
         width: 100px;
@@ -626,8 +639,13 @@ span.green-text {
 }
 
 .hero.deal {
+    height: 650px;
+    padding-bottom: 2rem;
     .hero-content {
         flex-direction: column;
+        &__title {
+            text-align: center;
+        }
     }
     .hero-benefits {
         display: grid;

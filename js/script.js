@@ -116,7 +116,7 @@ forms.forEach(element => {
   element.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const phoneInput = element.getElementsByName('client-phone')[0];
+    const phoneInput = element.querySelector('[name="client-phone"]');
     const phoneRegex = /^((\+7|7|8)+([0-9]){10})$/;
 
     if (!phoneRegex.test(phoneInput.value)) {
@@ -132,11 +132,12 @@ forms.forEach(element => {
         },
         body: new URLSearchParams(new FormData(element)).toString(),
       });
-
+      console.log(new FormData(element));
       const data = await response.json();
+      
       if (data.status === "success") {
         thankyou.style.display = "block";
-
+        console.log(data.status)
         setTimeout(() => {
           thankyou.style.display = "none";
           modal.style.display = "none";
