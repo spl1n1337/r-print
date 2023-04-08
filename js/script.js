@@ -64,7 +64,7 @@ function carousel() {
 carousel();
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
   navigation: {
@@ -80,10 +80,10 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2.
+      slidesPerView: 2,
     },
     1150: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     }
   }
 });

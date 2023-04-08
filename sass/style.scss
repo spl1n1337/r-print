@@ -80,6 +80,12 @@ img {
     align-items: center;
 }
 .nav-top-menu {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0!important;
+    }
     font-weight: normal;
     font-style: normal;
     font-size: 1.14rem;
@@ -90,13 +96,10 @@ img {
     margin-left: auto;
     position: sticky;
     z-index: 100;
-    height: 110px;
     top: 0;
     background: #fff;
     border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 1rem 0;
     &__callwrapper {
         display: flex;
         flex-direction: column;
@@ -608,7 +611,7 @@ span.green-text {
     padding-bottom: 4rem;
 }
 .priceList {
-    width: 80%;
+    width: 100%;
     margin: 15px auto;
     border-collapse: collapse;
     overflow: hidden;
@@ -836,20 +839,22 @@ input:focus {
 .footer {
     transform: translateY(-30px);
     padding: 3rem 5rem;
-    display: grid;
     background: #ffffff;
     border-top: 1px solid var(--gray);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 30px;
     -moz-border-radius-topleft: 23px;
     -moz-border-radius-topright: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
     &__col {
         &:nth-child(1),&:nth-child(2) {
-            justify-self: center;
+            // justify-self: center;
 
         }
         iframe {
