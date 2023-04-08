@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $phone = isset($_POST["client-phone"]) ? $_POST["client-phone"] : "";
 
   // Проверяем, что все поля заполнены
-  if (empty($name) || empty($phone)) {
+  if (empty($phone)) {
     $response = array("status" => "error", "message" => "Пожалуйста, заполните все обязательные поля формы");
     echo json_encode($response);
     exit;

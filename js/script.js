@@ -75,6 +75,17 @@ const swiper = new Swiper('.swiper', {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    240: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2.
+    },
+    1150: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 const headers = document.querySelectorAll('.accordion-header');
@@ -153,3 +164,14 @@ forms.forEach(element => {
   });
 
 });
+
+const mobileIcon = document.getElementById('js-menu-open'),
+      mobileMenu = document.querySelector('.nav__mobile');
+
+
+mobileIcon.addEventListener(('click'), (e) => {
+  e.preventDefault();
+  mobileIcon.classList.toggle('is__open');
+  mobileMenu.classList.toggle('mob-active');
+});
+
