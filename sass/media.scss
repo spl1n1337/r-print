@@ -126,7 +126,7 @@
         align-items: center;
     }
     .deal-form-container .form-block {
-        padding: 0 2.85rem 2.85rem;
+        padding: 0 2.85rem 3.85rem;
     }
     .partners__icon {
         height: 30px;
@@ -206,5 +206,9 @@
         b {
             font-size: 1.1rem;
         }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
     }
   }

@@ -442,6 +442,13 @@ span.green-text {
     margin-right: auto;
     margin-left: auto;
     max-width: 1140px;
+    .nav-top-menu__phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: translatey(-28px);
+        font-size: 2rem;
+    }
 }
 .welcome__benefits {
     font-size: 1.14rem;
@@ -899,6 +906,7 @@ input:focus {
         &__phone {
             justify-content: flex-end;
             align-items: flex-end;
+            font-size: 2.4rem;
         }
     }
     .is-order {
@@ -1034,6 +1042,8 @@ input:focus {
     }
 }
 
-
+form .nav-top-menu__phone {
+    transform: translateY(100%);
+}
 
 @import 'media.scss';
