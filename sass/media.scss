@@ -57,6 +57,16 @@
   @media (max-width: 768px) {
     html {
       font-size: 9px !important;
+      overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .priceList {
+        img {
+            width: 100px;
+            height: 60px;
+        }
     }
     .container {
         padding: 0 1rem !important;
@@ -164,8 +174,11 @@
         grid-column: 1;
     }
     .footer {
-        grid-template-columns: repeat(1,1fr);
-        padding: 2rem;
+        padding: 2rem 1rem;
+        .container {
+            grid-template-columns: repeat(1,1fr);
+            padding: 2rem;
+        }
     }
     .footer__col:nth-child(1), .footer__col:nth-child(2) {
         justify-self: flex-start;
@@ -190,5 +203,8 @@
     }
     .priceList td {
         padding: 4px;
+        b {
+            font-size: 1.1rem;
+        }
     }
   }
