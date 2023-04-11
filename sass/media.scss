@@ -152,11 +152,9 @@
   }
 // ------------------------------------------------------------- > 481px -------------------------------------------------------------
   @media (max-width: 480px) {
-    .hero-content {
-        padding-bottom: 60px;
-    }
-    .welcome__benefits {
-        margin-top: 30px;
+    .hero-content__title {
+        font-size: 3.5rem;
+        padding-top: 1rem ;
     }
     .nav-top-menu__time.is-order {
         display: none;
