@@ -1046,4 +1046,13 @@ form .nav-top-menu__phone {
     transform: translateY(100%);
 }
 
+.white-number {
+    color: white;
+}
+
+.nav-top-menu__phone.big-number {
+    font-size: 2.5rem
+}
+
+
 @import 'media.scss';

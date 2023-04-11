@@ -174,4 +174,3 @@ mobileIcon.addEventListener(('click'), (e) => {
   mobileIcon.classList.toggle('is__open');
   mobileMenu.classList.toggle('mob-active');
 });
-
