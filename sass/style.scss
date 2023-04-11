@@ -959,6 +959,11 @@ input:focus {
         }
         .input__container {
             margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            input {
+                margin-bottom: 1rem;
+            }
         }
     }
 }
